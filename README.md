@@ -34,6 +34,47 @@ The actual data (e.g. images, series descriptions, filenames) is handled private
 4. It updates the XMP metadata of the selected image using tools like `exiftool`.
 
 ---
+***structured documentation***
 
-## 📁 Repo Structure
+
+---
+
+## 📄 XMP Template Fields
+
+The included `template.xmp` defines these fields in compliance with the Dublin Core and XMP Rights namespaces:
+
+| Field                     | Purpose                          |
+|---------------------------|----------------------------------|
+| `dc:title`                | Image title                      |
+| `dc:creator`              | Author/creator name              |
+| `dc:description`          | Description of the image         |
+| `dc:subject`              | Keywords (tags)                  |
+| `xmpRights:WebStatement`  | Author's website                 |
+| `xmpRights:Marked`        | Copyright flag (set to true)     |
+| `xmpRights:UsageTerms`    | Text describing license type     |
+| `cc:license`              | URL to official license document |
+
+---
+
+## 🔐 License
+
+This repository is licensed under the [MIT License](LICENSE), allowing free use, modification, and sharing of the included template and script logic.
+
+> Note: This repository does **not** include personal metadata, private descriptions, or actual image files. The tool is intended to be used **locally**, ensuring full control over sensitive or creative data.
+
+---
+
+## ✍️ Author
+
+**Fernando Alberto Sol Pérez**  
+[fernandoalbertosolperez.com](https://fernandoalbertosolperez.com)
+
+---
+
+## 🧩 Future Directions
+
+- Add `metadata_editor.py` for interactive CLI editing
+- Integrate batch processing
+- Add CLI-based gallery manager for symbolic series
+- Optional GUI layer using Tkinter or web interface
 
